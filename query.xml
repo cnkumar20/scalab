@@ -1,9 +1,5 @@
-<sql> </sql>
-shortest and logest city names , respective lengths ,
+<sql>
+    Q1) get firstName from contacts table who length is length than 5 and greater tha 8 , if length are same get the first in asc order
 
-
-group by ((city))
-
-
-<nandiesh> </nandiesh>
-<nandiesh> </nandiesh>
+    select contactFirstName,len from (select contactFirstName,len,count(contactFirstName) from (select contactFirstName,length(contactFirstName) as len from customers order by contactFirstName asc) as e group by contactFirstName) as dam where len > 8 or len < 5;
+</sql>
