@@ -3,3 +3,16 @@
 
     select contactFirstName,len from (select contactFirstName,len,count(contactFirstName) from (select contactFirstName,length(contactFirstName) as len from customers order by contactFirstName asc) as e group by contactFirstName) as dam where len > 8 or len < 5;
 </sql>
+
+<sql>
+SELECT City, LENGTH(City)
+FROM (SELECT City
+      FROM Station
+     ORDER BY LENGTH(City), City)
+WHERE ROWNUM = 1;
+SELECT City, LENGTH(City)
+FROM (SELECT City
+      FROM Station
+     ORDER BY LENGTH(City) DESC, City)
+WHERE ROWNUM = 1;
+</sql>
