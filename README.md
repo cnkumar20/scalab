@@ -6,10 +6,13 @@ tex# scalab
  
 *docker run --name nandy-mysql -v mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=mypasswd -d mysql:latest*
 
-*docker run --name nandy-mysql-v3 \
+*docker run --name nandy-mysql \
  -v /Users/nchandregowda/DPL/scalab/mysql-db:/var/lib/mysql \
- -e MYSQL_ROOT_PASSWORD=Nadal@123 -d mysql:latest *
+ -e MYSQL_ROOT_PASSWORD=**** -d mysql:latest *
  
+ docker run --name nandy-mysql \
+-v /Users/priya-mac/garage/mysql-data:/var/lib/mysql \
+-e MYSQL_ROOT_PASSWORD=****** -d mysql:latest
  
 ## Accessing the library
 
