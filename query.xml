@@ -22,3 +22,6 @@ WHERE ROWNUM = 1;
 
 select name from students where marks > 75 order by substring(name,length(name)-2,3),id;
 </sql>
+<sql name="Weather Observation Station 19">
+Select round(sqrt(power(min(lat_n)-max(lat_n),2) +power(min(long_w)-max(long_w),2)),4) from station;
+</sql>
