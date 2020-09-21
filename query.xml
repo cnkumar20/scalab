@@ -5,6 +5,7 @@
 </sql>
 
 <sql>
+
 SELECT City, LENGTH(City)
 FROM (SELECT City
       FROM Station
@@ -15,4 +16,9 @@ FROM (SELECT City
       FROM Station
      ORDER BY LENGTH(City) DESC, City)
 WHERE ROWNUM = 1;
+</sql mn>
+
+<sql name="Higher Than 75 Marks">
+
+select name from students where marks > 75 order by substring(name,length(name)-2,3),id;
 </sql>
