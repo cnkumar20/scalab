@@ -40,3 +40,6 @@ Else "Not A Triangle"
 End
 From triangles;
 </sql>
+<sql name="African cities">
+Select c.name from city c where c.countrycode in (Select code from country where continent like 'Africa');
+</sql>
