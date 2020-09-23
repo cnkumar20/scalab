@@ -1,17 +1,5 @@
-/*
-package cnkumar20.lab.scala
-
-import org.apache.spark.sql.DataFrame
-import org.apache.spark.sql.functions._
-
-object Tubular {
-
-  def withGoodVibes()(df: DataFrame): DataFrame = {
-    df.withColumn(
-      "chi",
-      lit("happy")
-    )
+object Main {
+  def main(args: Array[String]) {
+    println("Hello WOrld")
   }
-
 }
-*/
